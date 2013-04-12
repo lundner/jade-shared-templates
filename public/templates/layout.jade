@@ -1,0 +1,11 @@
+!!! 5
+html(lang="en")
+head
+	script(data-main="/javascripts/requirements.js", src="/javascripts/require.js")
+body
+	h1 Hallo Welt
+	ul#mylist
+		each zeile in zeilen
+			color = zeile.color
+			content = zeile.content
+			include listitem
